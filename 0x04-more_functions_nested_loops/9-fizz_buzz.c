@@ -11,7 +11,6 @@
 int main(void)
 {
 	int value = 1;
-
 	while (value <= 100)
 	{
 		if (value % 3 == 0 && value % 5 == 0)
