@@ -1,38 +1,19 @@
-cat > 0-memset.c
 #include "main.h"
 
-
-
 /**
-
- * _memset - fill memory with a constant byte
-
- *
-
- * @str: pointer to a memory area
-
- * @b: the constant byte to fill the memory area
-
- * @n: number of bytes to fill
-
- *
-
- * Return: pointer to memory area str
-
- */
-
-char *_memset(char *str, char b, unsigned int n)
-
+* _memcpy - copies a function of byte
+*
+* @dest: pointer to the destination memory
+* @src: pointer to the source memory
+* @n: number of bytes of copy
+*
+* Return: pointer to the destination
+*/
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-
 	unsigned int i;
 
-
-
-	for (i = 0; i < n ; ++i)
-
-		*(str + i) = b;
-
-	return (str);
-
+	for (i = 0; i < n; ++i)
+		*(dest + i) = *(src + i);
+	return (dest);
 }
